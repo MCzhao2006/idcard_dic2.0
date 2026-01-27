@@ -13,7 +13,17 @@ birth = ""
 genderstr = ""
 divisor = ""
 last = ""
+start = 0
+end = 0
 check18list = [7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2]
+check = [1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+def returnresult():
+    result = 0
+    for i in range(0, len(check18list)):
+        result += (int(before17[i]) * int(check18list[i]))
+    result = result % 11
+    return result
+
 while not len(begin) == 6:
     begin = str(input("请输入前六位省市区号(如320211):"))
 if bl == 1:
@@ -30,34 +40,39 @@ if bl == 1:
                     divisor = 0
                 for gender in range(0, 10):
                     before17 = list(f"{begin}{birth}{x}{y}{gender}")
-                    result = 0
-                    for i in range(0, len(check18list)):
-                        result += (int(before17[i]) * int(check18list[i]))
-                    result = result % 11
-                    check = [1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+                    result = returnresult()
                     if gender % 2 == divisor:   # 条件更改除数分流男女
                         for last in range(0, 11):  # 词条组合,并写入文件
                             if last != check[result]:
                                 continue
                             if last == 10:  # 最后一位为10替换X
                                 last = "X"
-                            f.write(f"{begin}{birth}{x}{y}{gender}{last}\n")
+                            before17 = ''.join(before17)
+                            f.write(f"{before17}{last}\n")
 elif bl == 2:
     with open(output_file, 'w') as f:
-        if not len(last) == 4:
-            last = str(input('请输入身份证后四位:'))
-        start = int(input("请输入生日起始年份:"))
-        end = int(input("请输入生日结束年份:"))
+        while not len(last) == 4:
+            last = input('请输入身份证后四位:')
+        while start < 1910:
+            start = int(input("请输入生日起始年份:"))
+        while end < 1910:
+            end = int(input("请输入生日结束年份:"))
+
         for year in range(start, end + 1):
-            year1 = f"{year}"
             for month in range(1, 13):
                 if month < 10:
-                    month1 = f"0{month}"
-                else:
-                    month1 = f"{month}"
+                    month = f"0{month}"
                 for date in range(1, 32):
                     if date < 10:
-                        date1 = f"0{date}"
-                    else:
-                        date1 = f"{date}"
-                    f.write(f"{begin}{year1}{month1}{date1}{last}\n")
+                        date = f"0{date}"
+                    if month == 2 and date > 29:
+                        break
+                    birth = str(year)+str(month)+str(date)
+                    before17 = list(f"{begin}{birth}{last[0]}{last[1]}{last[2]}")
+                    result = returnresult()
+                    if last[3] == 'X' or last[3] == 'x':
+                        lastint = 10
+                    if lastint != check[result]:
+                        continue
+                    before17 = ''.join(before17)
+                    f.write(f"{before17}{last[3]}\n")
