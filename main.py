@@ -23,7 +23,10 @@ def returnresult():
         result += (int(before17[i]) * int(check18list[i]))
     result = result % 11
     return result
-
+def fuckX(X):
+    if X == 'X' or X == 'x':
+        return 10
+    return int(X)
 while not len(begin) == 6:
     begin = str(input("请输入前六位省市区号(如320211):"))
 if bl == 1:
@@ -70,9 +73,7 @@ elif bl == 2:
                     birth = str(year)+str(month)+str(date)
                     before17 = list(f"{begin}{birth}{last[0]}{last[1]}{last[2]}")
                     result = returnresult()
-                    if last[3] == 'X' or last[3] == 'x':
-                        lastint = 10
-                    if lastint != check[result]:
+                    if fuckX(last[3]) != check[result]:
                         continue
                     before17 = ''.join(before17)
                     f.write(f"{before17}{last[3]}\n")
