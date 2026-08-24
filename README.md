@@ -1,3 +1,8 @@
+## 相关 Skill
+本工具配套 Agent Skill 已发布：  
+[idcard_dic_skill](https://github.com/MCzhao2006/idcard_dic_skill)  
+在支持 Skills 的 Agent 中加载后，可直接通过自然语言生成合法校验的中国大陆身份证字典（仅限授权安全研究与防御测试场景）。
+
 # idcard_dic
 用途:根据用户提供已知位数值,使用身份证校验码生成轻量的中国大陆身份证字典,本工具免费/开源,无网络连接<br>
 注意:<br>
@@ -9,18 +14,13 @@
 一切使用后果由使用者自行承担，作者不承担任何法律责任。<br>
 继续使用即视为同意本声明。<br>
 <br>
+# 参考法典:
 《中华人民共和国刑法》http://www.npc.gov.cn/zgrdw/npc/lfzt/rlys/2008-08/21/content_1882895.htm<br>
 《中华人民共和国个人信息保护法》http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html<br>
 《中华人民共和国数据安全法》http://www.npc.gov.cn/c2/c30834/202106/t20210610_311888.html<br>
 《中华人民共和国网络安全法》https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm<br>
+《中华人民共和国居民身份证法》https://www.ccdi.gov.cn/fgk/law_display/827<br>
+《中华人民共和国反电信网络诈骗法》https://www.mps.gov.cn/n6557558/c8681178/content.html<br>
 <br>
 
 ## Star History
-
-<a href="https://www.star-history.com/?repos=MCzhao2006%2Fidcard_dic&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=MCzhao2006/idcard_dic&type=date&theme=dark&legend=bottom-right" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=MCzhao2006/idcard_dic&type=date&legend=bottom-right" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=MCzhao2006/idcard_dic&type=date&legend=bottom-right" />
- </picture>
-</a>
