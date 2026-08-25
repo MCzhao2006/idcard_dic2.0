@@ -13,14 +13,14 @@
 本工具仅供合法的安全测试、教育研究使用。严禁用于任何未经授权的攻击、破解或违法行为！<br>
 一切使用后果由使用者自行承担，作者不承担任何法律责任。<br>
 继续使用即视为同意本声明。<br>
-<br>
+
 # 参考法典:
 《中华人民共和国刑法》http://www.npc.gov.cn/zgrdw/npc/lfzt/rlys/2008-08/21/content_1882895.htm<br>
-《中华人民共和国个人信息保护法》http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html<br>
-《中华人民共和国数据安全法》http://www.npc.gov.cn/c2/c30834/202106/t20210610_311888.html<br>
 《中华人民共和国网络安全法》https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm<br>
-《中华人民共和国居民身份证法》https://www.ccdi.gov.cn/fgk/law_display/827<br>
-《中华人民共和国反电信网络诈骗法》https://www.mps.gov.cn/n6557558/c8681178/content.html<br>
+《中华人民共和国个人信息保护法》-第二节-http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html<br>
+《中华人民共和国数据安全法》-第四章、第六章-http://www.npc.gov.cn/c2/c30834/202106/t20210610_311888.html<br>
+《中华人民共和国居民身份证法》-第四章-https://www.ccdi.gov.cn/fgk/law_display/827<br>
+《中华人民共和国民法典》-第一千零三十四条-https://www.court.gov.cn/zixun/xiangqing/233181.html<br>
+《中华人民共和国反电信网络诈骗法》-第三十一条-https://www.mps.gov.cn/n6557558/c8681178/content.html<br>
 <br>
 
-## Star History
